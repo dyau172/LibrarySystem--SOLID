@@ -11,7 +11,7 @@ New features should be implemented with new code, not changing the old code.
 Use abstract and override.
 
 
-Liskov's Substitution Principle
+Liskov's Substitution Principle<br>
 (Think ducks! Parent class is duck, if child class is mechanical duck then you're quacking at the wrong tree. Mechanic duck uses batteries. Need female ducks)
 
 Intergration Segregation Principle
