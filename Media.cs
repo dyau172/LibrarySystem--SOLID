@@ -15,7 +15,7 @@ namespace library_system {
         public string DateOfPublication { get; set; }
         public string ID { get; set; }
 
-        public Media (string title, string publisher, string dateOfPublication, string category, string ID) {
+        public Media (string title, string publisher, string dateOfPublication, string category) {
             Title = title;
             Publisher = publisher;
             DateOfPublication = dateOfPublication;

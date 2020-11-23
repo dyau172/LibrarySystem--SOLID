@@ -19,6 +19,7 @@ namespace library_system
       
 
         public NonFictionBook(string title, string author, string publisher, string dateOfPublication, string category)
+        : base (title, publisher, dateOfPublication, category) 
         {
             Title = title;
             Author = author;

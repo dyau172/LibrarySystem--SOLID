@@ -14,7 +14,8 @@ namespace library_system {
 
       
 
-        public Magazine (string title, string publisher, string dateOfPublication, string editor,string category) {
+        public Magazine (string title, string publisher, string dateOfPublication, string editor,string category)
+        : base (title, publisher, dateOfPublication, category) {
             Title = title;
             Publisher = publisher;
             DateOfPublication = dateOfPublication;
