@@ -26,7 +26,7 @@ namespace library_system
             while (true)
             {
                 Console.Clear();
-                time.Update();
+                //time.Update();
                 time.Display();
 
                 switch (filetype)

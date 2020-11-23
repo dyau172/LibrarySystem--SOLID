@@ -19,9 +19,13 @@ namespace library_system
         {
             Console.WriteLine($"Time: {time.ToString("HH:mm:ss")}");
         }
+
+        /*
         public void Update()
         {
             time = System.DateTime.Now;
         }
+
+        */
     }
 }
