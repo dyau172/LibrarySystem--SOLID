@@ -118,5 +118,13 @@
     "Publisher": "dsfs",
     "DateOfPublication": "dsf",
     "ID": "Syst01"
+  },
+  {
+    "Author": "me",
+    "Category": "Programming",
+    "Title": "a programming book",
+    "Publisher": "me",
+    "DateOfPublication": "today",
+    "ID": "Prog07"
   }
 ]
