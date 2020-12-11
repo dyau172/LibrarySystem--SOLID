@@ -12,9 +12,10 @@ namespace library_system
         [XmlIgnore]
          static List<string> categories = new List<string>();
         public string Author { get; set; }    
+         public string Category { get; set; }
       
         public NonFictionBook(string title, string author, string publisher, string dateOfPublication, string category)
-        : base (title, publisher, dateOfPublication, category) 
+        : base (title, publisher, dateOfPublication) 
         {
             Title = title;
             Author = author;

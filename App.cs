@@ -12,6 +12,8 @@ namespace library_system {
         private string filetype = "JSON";
         private LibraryHelper libraryHelper = new LibraryHelper ();
         private List<NonFictionBook> books;
+        //private List<FictionBook> nonbooks;
+        //private List<Magazines> mags;
         CurrentTime time = new CurrentTime ();
         public App () {
 
@@ -22,23 +24,7 @@ namespace library_system {
             AddNew();
             DisplayAll();
             
-           /*  while (true) {
-               
-
-                //---saving to file ------------------------------------------------------------------------------------
-                SaveToFile();
-           
-                bool done = false;
-
-                //---adding new thing ------------------------------------------------------------------------------------------------------------
-                AddNew();
-                //---category ------------------------------------------------------------------------------------------------------------
-                
-
-                //---Display all books -------------------------------------------------------------------------------------------------------------------------------------------
-                DisplayAll();
-            }
- */
+         
         }
 
         //---for some reason, inserting colons ------------------------------------------------------------------------------------------------------------
@@ -90,6 +76,16 @@ namespace library_system {
             if (another == "n") {
                 done = true;
             }
+
+            // insert a menu option here
+            // select which type of media (fiction, non-fiction or magazine)
+
+            // switch statement -  1 - fiction, 2 - non-fiction, 3 - magazine
+            // copy code below to add new types
+            // for fiction books - change all the "NonFiction" parts to fiction and all the categories to genre
+            // magazine doesn't need categories or genres, change author to editors 
+
+
             //---category ------------------------------------------------------------------------------------------------------------
             while (!done) {
                 Console.Clear ();
@@ -119,6 +115,13 @@ namespace library_system {
                 Console.WriteLine ("You have sected {0}", selectedCategory);
 
                 string title = Input ("Title");
+
+                // Number of authors 
+                // Option to include more than one author here
+                // User inputs the number of authors 
+                // Convert number to int 
+                // for loop (int i = 0; i < numOfAuthors; i++)
+
                 string author = Input ("Author");
                 string publisher = Input ("Publisher");
                 string dateOfPublication = Input ("Date of publication");

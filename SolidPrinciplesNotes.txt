@@ -1,0 +1,38 @@
+Single Responsiblity Principle
+(Class only has one job to do/ serperate responsibilies)
+The seperation of the IUserInterfaceElement class is a good example of this. Originally this class had two methods; display and update which do two different things.
+By seperating them out, each class has their own set of responsiblities. 
+
+
+Open Close Prinicple
+(If it ain't broke, don't fix it)
+New features should be implemented with new code, not changing the old code.
+Use abstract and override.
+
+An example of the Open/Closed Principle is the addition of the NonFictionBook class, created using polymorphism. The base class is extended to allow for a new type of book class 
+but not modified in such as way that would break other classes that inherit from it.  
+
+Liskov's Substitution Principle
+(Think ducks! Parent class is duck, if child class is mechanical duck then you're quacking at the wrong tree. Mechanic duck uses batteries. Need female ducks)
+
+Intergration Segregation Principle
+ISP states that "a client should not be exposed to methods it does not need"
+
+Currently the Update method in Book and Magazine are not implemented, maybe it doesn't need to implimented? By creating an IUpdate interface class, the Book and Magazine class
+will not have to update if it doesn't need to. 
+
+
+Dependency Inversion Principle 
+High level modules (Program) depending on low level modules. Both high and low levels should depend on abstractions.
+Abstractions should not depend on details. 
+Basically.. a developer should be able to chuck in codeout with breaking anything in the process. 
+One way to implement dependency inversion could be to use something called dependency injection. 
+
+
+Notes
+- Took "Update" out of IUserInterfaceElement. By taking out the Update method, we are preventing the IUserInterfaceElement class from potentially doing too much (Single Responsiblity Prinicple).
+
+
+- App.cs looks like it's doing too much. Saving things into JSON or XML (which doesn't currently exist), serperated it out into methods, mostly so that it is easier to read but 
+maybe also because of single responsiblity? Just a little bit.. 
+
